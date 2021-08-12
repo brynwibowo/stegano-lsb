@@ -66,9 +66,9 @@ for($x=0,$f=0;$x<$this->msgLength;$x=$x+3,$f++){
 
 private function newImg()
 {
-	if(imagepng($this->img,'output/'.$this->imgName))
+	if(imagepng($this->img,$this->imgName))
     {
-        echo "Berhasil !, image ada di direktori output/";
+        echo "Berhasil !, image baru ". $this->imgName .", untuk melihat pesan yang disisipkan di image buka showme.php";
     };
 	imagedestroy($this->img);
 
