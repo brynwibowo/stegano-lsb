@@ -1,5 +1,5 @@
 <?php
-require_once('converter.class.php');
+require_once('converter.php');
 
 class decode extends converter {
 
