@@ -67,15 +67,9 @@ protected function getImg($img)
  $ekstensi = strtolower(end($x));
  if ($ekstensi == "png" OR $ekstensi == "PNG")
   {
-   if($img['size'] <= 1500000)
-    {
 		$this->imgName = $img;
 		$this->img = imagecreatefrompng($img);
 	    
-     }else{
-		 echo "Ukuran gambar melebihi 1500kB";
-		 die();
-	 }
 	list($this->width, $this->height) = getimagesize($img); 
  }else{
 	 
